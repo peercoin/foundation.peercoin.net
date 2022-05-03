@@ -1,6 +1,8 @@
 $peercoin-green: #3cb054;
 $background-color: #E5E5E5;
 
+@import url(google-fonts.css);
+
 body {
   background-color: $background-color;
   margin: 0;
@@ -13,6 +15,7 @@ body {
     margin-top: 3rem;
   }
 }
+
 .content__box {
   margin: 0 15rem;
   padding: 2.5rem 0 2.5rem;
@@ -21,6 +24,17 @@ body {
     margin: 0 3rem;
   }
 };
+
+.header {
+  background-color: $peercoin-green;
+  display: flex;
+  justify-content: center;
+
+  &__logo {
+    width: 150px;
+    margin: 3rem;
+  }
+}
 
 .footer {
   background-color: $peercoin-green;
