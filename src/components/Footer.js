@@ -11,8 +11,7 @@ export default function Footer() {
                 </div>
                 <div className="mt-2">
                     <p className='bold'>
-                        © {new Date().toLocaleString('en-US', { 'year': 'numeric' })} Stichting Peercoin Foundation<br /><br />
-                        All content licensed under GNU Affero General Public License Version 3, unless otherwise noted
+                        © {new Date().toLocaleString('en-US', { 'year': 'numeric' })} Stichting Peercoin Foundation
                     </p>
                 </div>
             </div>
