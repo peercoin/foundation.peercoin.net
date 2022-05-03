@@ -36,6 +36,10 @@ body {
   &__content {
     margin: 0 15rem;
     padding: 2.5rem 0 2.5rem;
+
+    @media screen and (max-width: 1024px) {
+      margin: 0 3rem;
+    }
   };
   &__heading {
     font-size: 1.3rem;
