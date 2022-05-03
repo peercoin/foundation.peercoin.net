@@ -1,5 +1,5 @@
 $peercoin-green: #3cb054;
-$background-color: #E5E5E5;
+$background-color: white;
 
 @import url(google-fonts.css);
 
@@ -34,10 +34,28 @@ body {
     }
   }
 
+  &__box {
+    &--single {
+      margin-bottom: 3rem;
+    }
+  }
+
   h2 {
     color: $peercoin-green;
   }
   
+  a {
+    color: $peercoin-green;
+    
+    &:hover, &:active {
+      text-decoration: underline !important;
+    }
+    
+    &:link, &:visited {
+      text-decoration: none;
+    }
+  }
+
 }
 
 .header {
@@ -70,15 +88,32 @@ body {
     font-size: 1.3rem;
     color: white;
     margin-bottom: 1rem;
-    position: relative;
-
-    &:before {
-      content: url('img/info.svg');
-      width: 24px;
-      display: flex;
-      position: absolute;
-      left: -2rem;   
-      margin-top: 1px;
-     }
   };
+
+  .content__container {
+    padding-bottom: 1rem;
+  }
+}
+
+.icon {
+  position: relative;
+
+  &:before {
+    width: 24px;
+    display: flex;
+   }
+
+   &--footer:before {
+    content: url('img/info.svg');
+    left: -2rem;   
+    margin-top: 1px;
+    position: absolute;
+
+   }
+   &--reports:before {
+    content: url('img/trending_up.svg');
+   }
+   &--community:before {
+    content: url('img/first_aid.svg');
+   }
 }
