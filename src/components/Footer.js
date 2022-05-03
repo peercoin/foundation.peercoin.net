@@ -4,7 +4,7 @@ import preval from 'preval.macro'
 export default function Footer() {
     return (
         <div className='footer'>
-            <div className="footer__content">
+            <div className="content__box">
                 <div className="footer__heading">Organizational notes</div>
                 <div>
                     <p><b>Stichting Peercoin Foundation</b><br />President Kennedylaan 19<br />2517JK The Hague<br />The Netherlands<br /> RSIN: 858715958</p>

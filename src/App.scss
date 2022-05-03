@@ -13,6 +13,14 @@ body {
     margin-top: 3rem;
   }
 }
+.content__box {
+  margin: 0 15rem;
+  padding: 2.5rem 0 2.5rem;
+
+  @media screen and (max-width: 1024px) {
+    margin: 0 3rem;
+  }
+};
 
 .footer {
   background-color: $peercoin-green;
@@ -33,14 +41,6 @@ body {
     font-weight: bold;
   }
 
-  &__content {
-    margin: 0 15rem;
-    padding: 2.5rem 0 2.5rem;
-
-    @media screen and (max-width: 1024px) {
-      margin: 0 3rem;
-    }
-  };
   &__heading {
     font-size: 1.3rem;
     font-weight: bold;
