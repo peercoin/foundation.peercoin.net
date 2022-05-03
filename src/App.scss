@@ -1,0 +1,56 @@
+$peercoin-green: #3cb054;
+$background-color: #E5E5E5;
+
+body {
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.mt {
+  &-3 {
+    margin-top: 3rem;
+  }
+}
+
+.footer {
+  background-color: $peercoin-green;
+
+  a {
+    color: white;
+    
+    &:hover, &:active {
+      text-decoration: underline !important;
+    }
+    
+    &:link, &:visited {
+      text-decoration: none;
+    }
+  }
+
+  p {
+    font-weight: bold;
+  }
+
+  &__content {
+    margin: 0 15rem;
+    padding: 2.5rem 0 2.5rem;
+  };
+  &__heading {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 1rem;
+    position: relative;
+
+    &:before {
+      content: url('img/info.svg');
+      width: 24px;
+      display: flex;
+      position: absolute;
+      left: -2rem;   
+      margin-top: 1px;
+     }
+  };
+}
